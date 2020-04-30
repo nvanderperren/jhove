@@ -12,9 +12,16 @@
   <description>Third party validation modules for JHOVE.</description>
 
   <properties>
-    <jwat.version>1.0.3</jwat.version>
+    <jwat.version>1.1.1</jwat.version>
     <epubcheck.version>4.2.2</epubcheck.version>
   </properties>
+  
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
 
   <build>
     <plugins>

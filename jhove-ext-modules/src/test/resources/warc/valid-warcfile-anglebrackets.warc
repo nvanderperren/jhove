@@ -1,0 +1,164 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2020-04-30T10:20:09Z
+WARC-Record-ID: <urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+WARC-Filename: valid-warcfile-anglebrackets.warc.warc.gz
+WARC-Block-Digest: sha1:UVQRA5YYGKV7O2PEQI64P7BH2KY3UH3T
+Content-Length: 254
+
+software: Wget/1.20.3 (darwin17.7.0)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: classic
+wget-arguments: "--warc-file=valid-warcfile-anglebrackets.warc" "https://example.org" 
+
+
+
+WARC/1.0
+WARC-Type: request
+WARC-Target-URI: <https://example.org/>
+Content-Type: application/http;msgtype=request
+WARC-Date: 2020-04-30T10:20:09Z
+WARC-Record-ID: <urn:uuid:944B6713-291B-4CEA-98F7-DEA8258B7FF0>
+WARC-IP-Address: 127.0.0.1
+WARC-Warcinfo-ID: <urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+WARC-Block-Digest: sha1:WW4PD42XIQTBPVP4JYAJ3J2ASZVVDSJD
+Content-Length: 141
+
+GET / HTTP/1.1
+User-Agent: Wget/1.20.3 (darwin17.7.0)
+Accept: */*
+Accept-Encoding: identity
+Host: example.org
+Connection: Keep-Alive
+
+
+
+WARC/1.0
+WARC-Type: response
+WARC-Record-ID: <urn:uuid:8C2E20B7-ADC2-462E-B04A-1D3023789857>
+WARC-Warcinfo-ID: <urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+WARC-Concurrent-To: <urn:uuid:944B6713-291B-4CEA-98F7-DEA8258B7FF0>
+WARC-Target-URI: <https://example.org/>
+WARC-Date: 2020-04-30T10:20:09Z
+WARC-IP-Address: 127.0.0.1
+WARC-Block-Digest: sha1:FMZ6OKL3V3TAYSEDAEPQXH3TI6VXVVX4
+WARC-Payload-Digest: sha1:JI6OR3QR4CI526JD6TMMNZNV4QPMPQCH
+Content-Type: application/http;msgtype=response
+Content-Length: 1596
+
+HTTP/1.1 200 OK
+Age: 381217
+Cache-Control: max-age=604800
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 30 Apr 2020 10:20:10 GMT
+Etag: "3147526947+gzip+ident"
+Expires: Thu, 07 May 2020 10:20:10 GMT
+Last-Modified: Thu, 17 Oct 2019 07:18:26 GMT
+Server: ECS (dcb/7F7F)
+Vary: Accept-Encoding
+X-Cache: HIT
+Content-Length: 1256
+
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+
+WARC/1.0
+WARC-Type: metadata
+WARC-Record-ID: <urn:uuid:EF897497-1AEE-408E-A826-DF6269686461>
+WARC-Warcinfo-ID: <urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/MANIFEST.txt>
+WARC-Date: 2020-04-30T10:20:10Z
+WARC-Block-Digest: sha1:CA6U3GA77UHT6RPXLMMFA4N6YDKT3VCE
+Content-Type: text/plain
+Content-Length: 48
+
+<urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:B6B54676-D7E7-4552-8C86-ED904D39310F>
+WARC-Warcinfo-ID: <urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+WARC-Concurrent-To: <urn:uuid:EF897497-1AEE-408E-A826-DF6269686461>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget_arguments.txt>
+WARC-Date: 2020-04-30T10:20:10Z
+WARC-Block-Digest: sha1:I73RXB2XMHP5PXNHWCN4I326FS3MSLAW
+Content-Type: text/plain
+Content-Length: 71
+
+"--warc-file=valid-warcfile-anglebrackets.warc" "https://example.org" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:B9266BE5-81E6-4214-B404-4A76461008C1>
+WARC-Warcinfo-ID: <urn:uuid:08B6B38B-24A3-4333-82B8-B3FFF8060C0A>
+WARC-Concurrent-To: <urn:uuid:EF897497-1AEE-408E-A826-DF6269686461>
+WARC-Target-URI: <metadata://gnu.org/software/wget/warc/wget.log>
+WARC-Date: 2020-04-30T10:20:10Z
+WARC-Block-Digest: sha1:52ZSWAQUOKYK7IQ6FO3B3V43MLSNUSRH
+Content-Type: text/plain
+Content-Length: 540
+
+Openen van WARC-bestand ‘valid-warcfile-anglebrackets.warc.warc.gz’.
+
+--2020-04-30 12:20:09--  https://example.org/
+Herleiden van example.org (example.org)... 93.184.216.34
+Verbinding maken met example.org (example.org)|93.184.216.34|:443... verbonden.
+HTTP-verzoek is verzonden; wachten op antwoord... 200 OK
+Lengte: 1256 (1,2K) [text/html]
+Wordt opgeslagen als: ‘index.html’
+
+     0K .                                                     100% 27,2M=0s
+
+2020-04-30 12:20:10 (27,2 MB/s) - '‘index.html’' opgeslagen [1256/1256]
+
+
+
