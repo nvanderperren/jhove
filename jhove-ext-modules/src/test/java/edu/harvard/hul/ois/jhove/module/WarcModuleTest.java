@@ -880,35 +880,25 @@ public class WarcModuleTest {
 
 		generalWellFormedChecks(warcFile);
 	}
-    
+    /* test to check if a WARC 1.0 file  made by wget < 1.20 is valid  
+    Warc-Target-URI is between angle brackts e.g. <https://example.org>
+    but only in Warc-Type: response
+    */
     @Test
-    public void parseValidWarcFileRequestWithAngleBrackets() throws Exception {
+    public void parseValidWarcTargetURIRequestWithAngleBrackets() throws Exception {
 		File warcFile = new File("src/test/resources/warc/valid-warcfile-requestwithanglebrackets.warc");
 
-        RepInfo info = generalInvalidChecks(warcFile);
-        info.getMessage().forEach((message) -> {
-            System.out.println(message.getMessage());
-            });
-
-        assertEquals(2, info.getMessage().size());
-        Map<String, Integer> messages = extractMessages(info.getMessage());
-        assertEquals(1, messages.size());
-        assertEquals(2, messages.get(DiagnosisType.INVALID_EXPECTED.name()).intValue());	
-    }
+		generalWellFormedChecks(warcFile);
+	}
     
+    /* test to check if a WARC 1.0 file made by wget > 1.20 is valid
+    WARC-Target-URI in every record is between angle brackts e.g. <https://example.org> 
+    */
     @Test
-    public void parseValidWarcFileWithAngleBrackets() throws Exception {
+    public void parseValidWarcTargetURIWithAngleBrackets() throws Exception {
 		File warcFile = new File("src/test/resources/warc/valid-warcfile-anglebrackets.warc");
 
-		RepInfo info = generalInvalidChecks(warcFile);
-        info.getMessage().forEach((message) -> {
-            System.out.println(message.getMessage());
-            });
-
-        assertEquals(5, info.getMessage().size());
-        Map<String, Integer> messages = extractMessages(info.getMessage());
-        assertEquals(1, messages.size());
-        assertEquals(5, messages.get(DiagnosisType.INVALID_EXPECTED.name()).intValue());	
+		generalWellFormedChecks(warcFile);
 	}
     
 	@Test
